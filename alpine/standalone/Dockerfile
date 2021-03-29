@@ -24,7 +24,7 @@ RUN apk -U update && apk -U add \
   mesa-dev \
   nodejs \
   npm \
-  openjdk8 \
+  openjdk11 \
   pulseaudio-dev \
   su-exec \
   ncurses \
