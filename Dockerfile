@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-LABEL de.mindrunner.android-docker.flavour="ubuntu-standalone"
-
 ENV ANDROID_SDK_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_ROOT /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
@@ -10,8 +8,6 @@ ENV ANDROID_SDK /opt/android-sdk-linux
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install required tools
-# Dependencies to execute Android builds
-
 RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   curl \
   expect \
