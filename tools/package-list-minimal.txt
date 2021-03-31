@@ -1,5 +1,6 @@
 build-tools;30.0.3
 cmake
+emulator
 extras;android;gapid;3
 extras;android;m2repository
 extras;google;auto
